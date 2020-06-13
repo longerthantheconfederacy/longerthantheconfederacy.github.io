@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Things That Lasted Longer Than The Confederacy</title>
+    <meta name="description" content="A random list of things that lasted longer than the Confederacy" />
+    <meta property="og:title" content="Things That Lasted Longer Than The Confederacy" />
+    <meta property="og:description" content="A random list of things that lasted longer than the Confederacy" />
+    <meta name="twitter:title" content="Things That Lasted Longer Than The Confederacy" />
+    <meta name="twitter:description" content="A random list of things that lasted longer than the Confederacy" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <noscript>
+        <div class="content">
+            <h1 class="title">The United States of America</h1>
+            <h2 class="subtitle">has lasted longer than the Confederacy</h2>
+            <h3 class="years">(1776 - present)</h3>
+        </div>
+    </noscript>
+    <div class="content">
+        <h1 class="title"></h1>
+        <h2 class="subtitle"></h2>
+        <h3 class="years"></h3>
+    </div>
+    <a class="source hide" href="#" target="_blank" rel="noopener noreferrer">
+        <span>Source</span>
+        <i> 🔗</i>
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.2.0/papaparse.min.js"></script>
+    <script src="app.min.js"></script>
+    <script type="text/javascript">
+        var things = new ThingsThatLastedLongerThanTheConfederacy({
+            data: '/things.csv',
+            title: document.querySelector('.title'),
+            subtitle: document.querySelector('.subtitle'),
+            years: document.querySelector('.years'),
+            source: document.querySelector('.source')
+        });
+
+        things.init();
+    </script>
+</body>
+</html>
