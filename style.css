@@ -73,21 +73,24 @@ body {
     font-size:32px;
 }
 
-.source {
+.footer {
     left:20px;
     right:20px;
     bottom:20px;
-    color:black;
     text-align:center;
-    text-decoration:none;
-    font-size:13px;
     position:absolute;
 }
 
-.source.hide {
+.footer a {
+    color:black;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.footer a.hide {
     display:none;
 }
 
-.source:hover span {
+.footer a:hover span {
     text-decoration:underline;
 }
